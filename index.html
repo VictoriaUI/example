@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ремонт квартир в Москве</title>
+  <link rel="stylesheet" href="./css/uikit.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="theme-color" content="#141e13" />
+  <link type="Image/x-icon" href="./favicon.png" rel="icon">
+  <link rel="stylesheet" href="./news.html">
+</head>
+<header>
+  <nav class="uk-navbar-container navbar-fon uk-navbar" uk-navbar>
+    <div class="uk-navbar-left">
+      <ul class="uk-navbar-nav">
+        <li class="uk-active">
+          <a class="nav-logo" uk-scroll href="#main-screen">Ремонт квартир</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="uk-navbar-right">
+      <ul class="uk-navbar-nav uk-visible@s">
+        <div class="uk-navbar-left menu uk-visible@l">
+          <a href="#portfolio" uk-scroll class="menu-link">Наши проекты</a>
+          <a href="#stages" uk-scroll class="menu-link">Этапы работ</a>
+          <a href="#prices" uk-scroll class="menu-link">Тарифы</a>
+          <a href="#form" uk-scroll class="menu-link">Контакты</a>
+        </div>
+        <span class="navbar-text uk-text-right">
+          <a class="phone" href="tel:+7 (987) 654-32-11">+7 (987) 654-32-11</a>
+          <div class="uk-text-center">
+            <span class="nav-online" style="color: red;"> • </span> 
+            <span class="nav-work-hours">Ежедневно с 08:00 до 21:00</span>
+          </div>
+        </span>
+      </ul>
+
+      <!-- Гамбургер в мобилке -->
+      <a class="nav-burger uk-navbar-toggle uk-navbar-toggle-animate uk-hidden@s" uk-navbar-toggle-icon href="#"></a>
+      <!-- DROPBAR в мобильной версии -->
+      <div class="nav-dropbar uk-dropbar uk-dropbar-top uk-hidden@s" uk-drop="stretch: x">
+        <div class="uk-navbar-left menu mobile-menu">
+          <a href="#portfolio" uk-scroll class="menu-link">Наши проекты</a>
+          <a href="#stages" uk-scroll class="menu-link">Этапы работ</a>
+          <a href="#prices" uk-scroll class="menu-link">Тарифы</a>
+          <a href="#form" uk-scroll class="menu-link">Контакты</a>
+        </div>
+        <div class="navbar-text uk-text-left mobile-menu">
+          <a class="phone" href="tel:+7 (987) 654-32-11">+7 (987) 654-32-11</a>
+          <span class="nav-online" style="color: red;"> • </span> 
+          <span class="nav-work-hours">Ежедневно с 08:00 до 21:00</span>
+          <div class="btn-wrapper btn-wrapper-navbar-mobile">
+            <input class="btn uk-button" href="#" role="button" 
+            type="button" value="Рассчитать стоимость">
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-------------Главный экран----------->
+  <div class="main-screen" id="main-screen">
+    <div class="uk-container">
+      <div class="main-screen-content" uk-grid>
+        <div class="uk-width-1-2@l uk-width-1 uk-text-left" uk-scrollspy="cls: uk-animation-fade; target: .every-title, .main-screen-subtitle, .btn-wrapper; delay: 500; repeat: false">
+          <h1 class="every-title main-screen-title">Ремонт квартир в короткие сроки</h1>
+          <p class="main-screen-subtitle">Закажи звонок прямо сейчас и получи скидку 10%</p>
+          <div class="btn-wrapper uk-hidden@xl">
+            <input class="btn uk-button" href="#" role="button" 
+            type="button" value="Заказать звонок">
+          </div>
+        </div>
+        <div class="uk-width-1-2 uk-text-center uk-visible@xl">
+          <form class="main-screen-form">
+            <fieldset class="uk-fieldset">    
+              <legend class="uk-legend form-legend">Закажите бесплатный замер</legend> 
+              <div class="uk-margin">
+                <input class="uk-input form-input" type="text" placeholder="Ваше имя" aria-label="Input">
+              </div>
+              <div class="uk-margin">
+                <input class="uk-input form-input" type="text" placeholder="+7 (999) 999-99-99" aria-label="Input">
+              </div>
+              <div class="btn-wrapper main-screen-btn-wrapper">
+                <input class="btn main-screen-btn uk-button" href="#" role="button" 
+                type="button" value="Оставить заявку">
+              </div>
+              <div class="form-text uk-margin uk-grid-small uk-child-width-auto uk-grid uk-text-left">
+                <label class="form-label">
+                  <input class="uk-checkbox form-checkbox" type="checkbox" checked> 
+                  Нажимая "Узнать стоимость"
+                  Вы соглашаетесь с <a class="privacy">Политикой конфиденциальности</a>
+                </label>
+              </div>
+            </fieldset>
+          </form> 
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<body>
+
+  <!----------portfolio------------->
+  <div class="portfolio" id="portfolio">
+    <div class="uk-container uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: .every-title; delay: 500; repeat: false">
+      <h2 class="every-title light-fon-title uk-visible@s">Наши реализованные проекты</h2>
+      <h2 class="every-title light-fon-title uk-hidden@s">Наши проекты</h2>
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider
+      uk-scrollspy="cls: uk-animation-scale-up; target: .portfolio-card; delay: 500; repeat: false">
+        <ul class="uk-slider-items uk-grid">
+          <li class="uk-width-1-2@m uk-width-4-5@s">
+            <div class="uk-panel portfolio-card">
+              <img class="portfolio-img" src="./img/portfolio-1.jpg" alt="">
+              <div class="uk-position-bottom-left uk-text-left">
+                <h2 class="portfolio-title" uk-slider-parallax="x: 100,-100">Ремонт однокомнатной квартиры «под ключ»</h2>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-1-2@m uk-width-4-5@s">
+            <div class="uk-panel portfolio-card">
+              <img class="portfolio-img" src="./img/portfolio-2.jpg" alt="">
+              <div class="uk-position-bottom-left uk-text-left">
+                <h2 class="portfolio-title" uk-slider-parallax="x: 100,-100">Капитальный ремонт прихожей</h2>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-1-2@m uk-width-4-5@s">
+            <div class="uk-panel portfolio-card">
+              <img class="portfolio-img" src="./img/portfolio-3.jpg" alt="">
+              <div class="uk-position-bottom-left uk-text-left">
+                <h2 class="portfolio-title" uk-slider-parallax="x: 100,-100">Ремонт гостиной «под ключ»</h2>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-1-2@m uk-width-4-5@s">
+            <div class="uk-panel portfolio-card">
+              <img class="portfolio-img" src="./img/portfolio-4.jpg" alt="">
+              <div class="uk-position-bottom-left uk-text-left">
+                <h2 class="portfolio-title" uk-slider-parallax="x: 100,-100">Капитальный ремонт «под ключ» в новостройке</h2>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-1-2@m uk-width-4-5@s">
+            <div class="uk-panel portfolio-card">
+              <img class="portfolio-img" src="./img/portfolio-5.jpg" alt="">
+              <div class="uk-position-bottom-left uk-text-left">
+                <h2 class="portfolio-title" uk-slider-parallax="x: 100,-100">Ремонт «под ключ» в новостройке</h2>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-visible-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-visible-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+      </div>
+    </div>
+  </div>
+
+  <!------Этапы работ------->
+  <div class="stages" id="stages">
+    <div class="uk-container uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: .every-title; delay: 500; repeat: false">
+      <h2 class="every-title">Этапы проведения ремонта</h2>
+      <div class="uk-flex-center" style="display: flex;"> 
+        <div class="stages-content uk-width-4-5@m uk-text-left" uk-grid 
+        uk-scrollspy="cls: uk-animation-scale-up; target: .stages-card; delay: 500; repeat: false">
+  
+          <div class="stages-card">
+            <div class="stages-advantages">
+              <div class="stages-advantages-num">1</div>
+              <div class="stages-advantages-text">
+                <span class="stages-subtitle">Замер и составление сметы</span>
+                <p class="stages-text">Вы оставляте заявку, к Вам на адрес приезжает специалист по замеру
+                  в удобное для Вас время и производит точный расчёт всех работ с учетом материалов. 
+                  Далее заключается договор и обговаривается дата начала ремонтных работ. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="stages-card">
+            <div class="stages-advantages">
+              <div class="stages-advantages-num">2</div>
+              <div class="stages-advantages-text">
+                <span class="stages-subtitle">Проведение ремонтных работ</span>
+                <p class="stages-text">Ремонтные работы производятся под присмотром прораба на объекте, который 
+                  обеспечивает беспрерывность проведения всех работ. Бригада выполняет ремонтные работы
+                  в обговоренные сроки.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="stages-card">
+            <div class="stages-advantages">
+              <div class="stages-advantages-num">3</div>
+              <div class="stages-advantages-text">
+                <span class="stages-subtitle">Сдача готового объекта</span>
+                <p class="stages-text">Прораб предоставляет Вам все закрывающие документы, производит полный 
+                  взаиморасчёт по всем работам и материалам. Производится уборка квартиры перед сдачей, проходит
+                  приёмка работ.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-wrapper stages-btn-wrapper">
+        <input class="btn uk-button" href="#" role="button" 
+        type="button" value="Рассчитать стоимость">
+      </div>
+    </div>
+  </div>
+
+  <!---------prices------------>
+  <div class="prices" id="prices">
+    <div class="uk-container uk-text-center" uk-scrollspy="cls: uk-animation-fade; target: .every-title; delay: 500; repeat: false">
+      <h2 class="every-title light-fon-title">Тарифы на ремонт</h2>
+
+      <div class="prices-container uk-child-width-expand@m uk-flex-center" style="margin-left: 0;" uk-grid
+      uk-scrollspy="cls: uk-animation-fade; target: .prices-content; delay: 500; repeat: false">
+
+      <div class="prices-content">
+        <h3 class="prices-title">Косметический ремонт</h3>
+        <p class="prices-text">
+          Самый быстрый и экономный вариант из всех возможных видов ремонта
+        </p>
+        <p class="price">от 2 990₽/м²</p>
+        <div class="prices-btn-wrapper">
+          <input class="btn uk-button" href="#" role="button" 
+          type="button" value="Рассчитать стоимость">
+        </div>
+      </div>
+      <div class="prices-content">
+        <h3 class="prices-title">Капитальный ремонт</h3>
+        <p class="prices-text">
+          Ремонт для тех, кто решился на кардинальные изменения в своей квартире
+        </p>
+        <p class="price">от 5 990₽/м²</p>
+        <div class="prices-btn-wrapper">
+          <input class="btn uk-button" href="#" role="button" 
+          type="button" value="Рассчитать стоимость">
+        </div>
+      </div>
+      <div class="prices-content">
+        <h3 class="prices-title">Дизайнерский ремонт</h3>
+        <p class="prices-text">
+          Эксклюзивный ремонт премиум-класса по готовому дизайн-проекту 
+        </p>
+        <p class="price">от 8 990₽/м²</p>
+        <div class="prices-btn-wrapper">
+          <input class="btn uk-button" href="#" role="button" 
+          type="button" value="Рассчитать стоимость">
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------form---------->
+  <div class="form" id="form">
+    <div class="uk-container uk-text-center form-container" uk-scrollspy="cls: uk-animation-fade; target: .every-title, .form-contacts-container; delay: 500; repeat: false">
+      <h2 class="every-title">Оставьте заявку на бесплатный замер</h2>
+        <div class="uk-child-width-expand@m form-contacts-container uk-text-left" uk-grid>
+          <div class="contacts-card">
+            <h3 class="contacts-title">Наши контакты</h3>
+            <a class="phone" href="tel:+7 (987) 654-32-11">+7 (987) 654-32-11</a>
+            <span class="online" style="color: red;"> • </span> 
+            <span class="nav-work-hours">Ежедневно с 08:00 до 21:00</span>
+            <div class="contacts-block">
+              <span class="contacts">Иванов Иван Иванович</span>
+              <span class="contacts">ИНН 123456789</span>
+              <span class="contacts">ОГРН 123456789</span>
+              <span class="contacts">Адрес: г. Москва, ул. Тверская, д.1</span>
+            </div>    
+            <div class="contacts-icons">
+              <a href="#" class="contacts-icon"><img src="./img/1.png" alt=""></a>
+              <a href="#" class="contacts-icon"><img src="./img/2.png" alt=""></a>
+              <a href="#" class="contacts-icon"><img src="./img/3.png" alt=""></a>
+            </div>            
+          </div>
+          <form class="contacts-form">
+            <fieldset class="uk-fieldset">    
+              <legend class="uk-legend form-legend">Закажите бесплатный замер</legend> 
+              <div class="uk-margin">
+                <input class="uk-input form-input" type="text" placeholder="Ваше имя" aria-label="Input">
+              </div>
+              <div class="uk-margin">
+                <input class="uk-input form-input" type="text" placeholder="+7 (999) 999-99-99" aria-label="Input">
+              </div>
+              <div class="btn-wrapper form-btn-wrapper">
+                <input class="btn uk-button" href="#" role="button" 
+                type="button" value="Оставить заявку">
+              </div>
+              <div class="form-text uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                <label class="form-label">
+                  <input class="uk-checkbox form-checkbox" type="checkbox" checked> 
+                  Нажимая "Узнать стоимость"
+                  Вы соглашаетесь с <a class="privacy">Политикой конфиденциальности</a>
+                </label>
+              </div>
+            </fieldset>
+          </form>             
+        </div>
+    </div>
+
+<!-------footer-------->
+<footer>
+  <div uk-grid>
+    <div class="uk-width-3-5@m">
+      <h3 class="footer-title">КАЧЕСТВЕННЫЙ РЕМОНТ КВАРТИР ЛЮБОЙ СЛОЖНОСТИ</h3>
+      <p class="footer-text">Наша компания предлагает любые виды ремонтно-отделочных работ. 
+        Рассчитайте стоимость ремонта вашей квартиры «под ключ» - выезд замерщика бесплатно.</p>
+    </div>
+
+    <div class="uk-width-2-5@m">
+      <div class="footer-menu-block">
+        <a href="#main-screen" uk-scroll class="footer-menu menu-link">Главная</a>
+        <a href="#portfolio" uk-scroll class="footer-menu menu-link">Наши проекты</a>
+        <a href="#stages" uk-scroll class="footer-menu menu-link">Этапы работ</a>
+        <a href="#prices" uk-scroll class="footer-menu menu-link">Тарифы</a>
+      </div>
+      <a class="privacy footer-privacy">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <a class="btn-totop" href="#" uk-totop uk-scroll></a>
+
+
+  <script src="./js/uikit.min.js"></script>
+  <script src="./js/uikit-icons.min.js"></script>
+  <script src="./js/script.js"></script>
+    
+</body>
+</html>
